@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'stripe',
     'orders.apps.OrdersConfig',
     'emailapp.apps.EmailappConfig',
+    'crispy_forms',
     
 ]
 
@@ -130,6 +131,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 CART_SESSION_ID = 'cart'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 STRIPE_SECRET_KEY = 'sk_test_SjvbQGI5E2eZbYx7O0juYkBz00It9RbFMT'
 STRIPE_PUBLISHABLE_KEY ='pk_test_JTkJiVkjTGwQn5wTsxLWvmQU00zUcrWCU8'
